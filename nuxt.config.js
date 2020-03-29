@@ -13,6 +13,15 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
+  modules: [
+    // Simple usage
+    'nuxt-buefy',
+
+    // Or you can customize
+    //['nuxt-buefy', { css: false, materialDesignIcons: false }],
+  ],
+
   /*
   ** Customize the progress bar color
   */
