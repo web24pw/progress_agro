@@ -1,13 +1,13 @@
 <template>
   <section>
     <button class="button is-medium is-primary" @click="alert">
-      Launch alert (default)
+      Launch alert (default) 34
     </button>
     <button class="button is-medium is-primary" @click="alertCustom">
-      Launch alert (custom)
+      Launch alert (custom) 34
     </button>
     <button class="button is-medium is-danger" @click="alertCustomError">
-      Launch alert (custom)
+      Launch alert (custom) 34sss
     </button>
   </section>
 </template>

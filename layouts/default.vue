@@ -1,5 +1,7 @@
 <template>
   <div>
+    <app-logo/>
+
     <nuxt/>
     <footer class="footer">
       <div class="container">
@@ -53,6 +55,16 @@
     </footer>
   </div>
 </template>
+
+<script>
+import AppLogo from '~/components/AppLogo.vue'
+
+export default {
+  components: {
+    AppLogo
+  }
+}
+</script>
 
 <style>
   html {
