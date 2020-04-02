@@ -1,7 +1,5 @@
 <template>
   <div>
-    <app-logo/>
-
     <nuxt/>
     <footer class="footer">
       <div class="container">
