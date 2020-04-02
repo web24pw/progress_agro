@@ -40,7 +40,7 @@
       <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
         <section :class="`hero is-medium is-${carousel.color}`">
           <span class="image">
-              <img :src="carousel.src">
+              <img :src="image(carousel.src)">
           </span>
         </section>
       </b-carousel-item>
@@ -53,8 +53,8 @@
             <div class="columns">
               <div class="column is-one-third">
                 <img
-                    src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
-                    width="100%">
+                  src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
+                  width="100%">
               </div>
               <div class="column">Хорошие грузовики</div>
             </div>
@@ -63,30 +63,8 @@
             <div class="columns">
               <div class="column is-one-third">
                 <img
-                    src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
-                    width="100%">
-              </div>
-              <div class="column">Хорошие грузовики</div>
-            </div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column is-half">
-            <div class="columns">
-              <div class="column is-one-third">
-                <img
-                    src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
-                    width="100%">
-              </div>
-              <div class="column">Хорошие грузовики</div>
-            </div>
-          </div>
-          <div class="column is-half">
-            <div class="columns">
-              <div class="column is-one-third">
-                <img
-                    src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
-                    width="100%">
+                  src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
+                  width="100%">
               </div>
               <div class="column">Хорошие грузовики</div>
             </div>
@@ -97,8 +75,8 @@
             <div class="columns">
               <div class="column is-one-third">
                 <img
-                    src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
-                    width="100%">
+                  src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
+                  width="100%">
               </div>
               <div class="column">Хорошие грузовики</div>
             </div>
@@ -107,8 +85,30 @@
             <div class="columns">
               <div class="column is-one-third">
                 <img
-                    src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
-                    width="100%">
+                  src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
+                  width="100%">
+              </div>
+              <div class="column">Хорошие грузовики</div>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-half">
+            <div class="columns">
+              <div class="column is-one-third">
+                <img
+                  src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
+                  width="100%">
+              </div>
+              <div class="column">Хорошие грузовики</div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="columns">
+              <div class="column is-one-third">
+                <img
+                  src="https://images11.popmeh.ru/upload/img_cache/360/360dca32418be98bfc1013c4fdcd0125_fitted_800x3000.jpg"
+                  width="100%">
               </div>
               <div class="column">Хорошие грузовики</div>
             </div>
@@ -183,19 +183,25 @@
 </template>
 
 <script>
- export default {
+export default {
   data () {
-   return {
-    autoPlay: false,
-    carousels: [
-     {text: 'Slide 1', src: '../assets/images/slide1.jpg', color: 'primary'},
-     {text: 'Slide 2', src: '../assets/images/slide2.jpg', color: 'info'},
-     {text: 'Slide 3', src: '../assets/images/slide3.jpg', color: 'success'}
-    ]
-   }
+    return {
+      autoPlay: false,
+      carousels: [
+        {text: 'Slide 1', src: 'slide1.jpg', color: 'primary'},
+        {text: 'Slide 2', src: 'slide2.jpg', color: 'info'},
+        {text: 'Slide 3', src: 'slide3.jpg', color: 'success'}
+      ]
+    }
+  },
+  methods: {
+    image(src) {
+      console.log(src)
+      const fileName = src.toLowerCase();
+      return require(`../assets/images/${fileName}`);
+    }
   }
-
- }
+}
 </script>
 <style lang="scss">
 
