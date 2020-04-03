@@ -1,51 +1,8 @@
 <template>
   <div>
-    <div class="nav_wrap">
 
-      <div class="container">
-
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#">
-            <img src="https://i.pinimg.com/originals/af/f5/78/aff5786664d1ef5b5384f99ee3e137b9.png" class="nav_logo">
-          </a>
-          <a class="navbar-item" href="#">
-            ООО «Прогресс Агро»
-          </a>
-
-          <a role="button" class="navbar-burger burger is-active" aria-label="menu" aria-expanded="false"
-             data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu is-active">
-          <div class="navbar-end">
-
-            <a class="navbar-item">
-              +7 916 268-81-87
-            </a>
-
-            <a class="navbar-item">
-              Главная
-            </a>
-
-            <a class="navbar-item">
-              О компании
-            </a>
-
-            <a class="navbar-item">
-              Контакты
-            </a>
-          </div>
-        </div>
-      </nav>
-      </div>
-
-    </div>
-
+    <div style="max-height: 300px">
+      <!--
     <b-carousel :autoplay="autoPlay">
       <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
         <section :class="`hero is-medium is-${carousel.color}`">
@@ -55,6 +12,8 @@
         </section>
       </b-carousel-item>
     </b-carousel>
+      -->
+    </div>
 
     <section class="section">
       <div class="container">
@@ -204,6 +163,7 @@
 </template>
 
 <script>
+
 export default {
   data () {
     return {
@@ -215,6 +175,7 @@ export default {
       ]
     }
   },
+
   methods: {
     image(src) {
       console.log(src)
@@ -232,13 +193,7 @@ export default {
     display: block;
   }
 
-  .nav_wrap {
-    padding: 1rem 1.5rem;
-  }
 
-  .nav_logo {
-    height: 50px;
-  }
 
   .title {
     color: #363636;

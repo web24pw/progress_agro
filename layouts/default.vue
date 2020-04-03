@@ -1,6 +1,10 @@
 <template>
   <div>
+
+    <app-header></app-header>
+
     <nuxt/>
+
     <footer class="footer">
       <div class="container">
         <div class="columns">
@@ -50,16 +54,17 @@
         </div>
       </div>
     </footer>
+
   </div>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import Header from '../components/Header'
 
 export default {
   components: {
-    AppLogo
-  }
+    'app-header': Header
+  },
 }
 </script>
 
