@@ -6,16 +6,15 @@
         <div class="columns">
           <div class="column">
             <h3 class="footer_title">О компании</h3>
-            <p class="footer_paragraph_accent">Наименование</p>
-            <p class="footer_paragraph">ООО «Прогресс Агро»</p>
+            <p class="footer_paragraph_accent">ООО «Прогресс Агро»</p>
             <p class="footer_paragraph_accent">Директор</p>
             <p class="footer_paragraph">Курталидис Михаил Сергеевич</p>
           </div>
           <div class="column">
             <h3 class="footer_title">Контакты</h3>
             <p class="footer_paragraph_accent">Адрес</p>
-            <p class="footer_paragraph">117279, Москва, ул. Миклухо-Маклая, 34 Э0
-              пом. IV к37 оф 265</p>
+            <p class="footer_paragraph">117279, Москва, <br>ул. Миклухо-Маклая, 34 Э0
+              <br>пом. IV к37 оф 265</p>
             <p class="footer_paragraph_accent">Телефон</p>
             <p class="footer_paragraph">+7 916 268-81-87</p>
             <p class="footer_paragraph_accent">E-mail</p>

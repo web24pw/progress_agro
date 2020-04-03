@@ -1,65 +1,58 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        Абаут
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <div>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h1 class="main_title">ООО Прогресс Агро</h1>
+
+            <p class="main_text">Быстрые и надежные перевозки по России, Казахстану, Беларуси, Армении,
+              Киргизии, Евросоюзу, Китаю, ДНР и ЛНР, включая отдаленные населенные пункты.</p>
+            <p class="main_text">Мы разрабатываем оптимальные схемы перевозки сборных
+              грузов и оказываем комплексный подход, что позволяет
+              сократить стоимость и сроки транспортировки.</p>
+            <p class="main_text">Мы смотрим в будущее и искренне верим в то, что своим отношением к делу формируем
+              ландшафт
+              транспортно-логистической отрасли, каждый день подтверждая это своими действиями.
+              Транспортно-логистическая отрасль невероятно сложна и требует высочайших профессиональных компетенций и
+              постоянного совершенствования процессов. Мы используем самые современные решения, зачастую формируя
+              стандарты отрасли. </p>
+            <p class="main_text">Сформировав своё Видение как «Лидер логистической отрасли», мы ставим себе цель стать
+              основой для
+              развития миллионов бизнесов на территории России и за её пределами, быть частью каждого груза,
+              перевезенного на территориях нашего присутствия.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+ import AppLogo from '~/components/AppLogo.vue'
 
-export default {
+ export default {
   components: {
-    AppLogo
+   AppLogo
   }
-}
+ }
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  .main_title {
+    color: #363636;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    margin-bottom: 1.5rem;
+  }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+  .main_text {
+    margin-bottom: 1em;
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+  }
 </style>
 

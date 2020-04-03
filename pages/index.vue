@@ -2,11 +2,15 @@
   <div>
     <div class="nav_wrap">
 
+      <div class="container">
 
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="#">
             <img src="https://i.pinimg.com/originals/af/f5/78/aff5786664d1ef5b5384f99ee3e137b9.png" class="nav_logo">
+          </a>
+          <a class="navbar-item" href="#">
+            ООО «Прогресс Агро»
           </a>
 
           <a role="button" class="navbar-burger burger is-active" aria-label="menu" aria-expanded="false"
@@ -19,6 +23,11 @@
 
         <div id="navbarBasicExample" class="navbar-menu is-active">
           <div class="navbar-end">
+
+            <a class="navbar-item">
+              +7 916 268-81-87
+            </a>
+
             <a class="navbar-item">
               Главная
             </a>
@@ -33,6 +42,7 @@
           </div>
         </div>
       </nav>
+      </div>
 
     </div>
 
@@ -149,6 +159,8 @@
               Связаться с нами
             </h2>
           </div>
+        </div>
+        <div class="columns">
           <div class="column">
             <template>
               <section>
@@ -156,22 +168,31 @@
                   <b-input v-model="name"></b-input>
                 </b-field>
 
-                <b-field label="E-mail"
+                <b-field label="Телефон"
                          type="is-danger"
-                         message="This email is invalid">
-                  <b-input type="email"
-                           value="john@"
+                         message="Телефон указан неверно">
+                  <b-input type="phone"
+                           value="890312312"
                            maxlength="30">
                   </b-input>
-                </b-field>
-
-                <b-field label="Сообщение">
-                  <b-input maxlength="200" type="textarea"></b-input>
                 </b-field>
               </section>
             </template>
           </div>
-
+          <div class="column">
+            <section>
+              <b-field label="Сообщение">
+                <b-input maxlength="200" type="textarea"></b-input>
+              </b-field>
+            </section>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <div class="buttons">
+              <b-button type="is-success" outlined>Отправить</b-button>
+            </div>
+          </div>
         </div>
 
       </div>
